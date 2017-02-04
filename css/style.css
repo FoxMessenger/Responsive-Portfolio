@@ -1,13 +1,13 @@
 html {
 	width: 100%;
-	min-width: 730px;
+	/*min-width: 400px;*/
 }
 
 body {
 	margin: 0; /* keeps the border from going above the header/h1 */
 	padding: 0;
 	font-family: "Helvetica Neue", "Helvetica", "Roboto", Arial, sans-serif;
-	font-size: 12px;
+	/*font-size: 12px;*/
 	color: #333333;
 	line-height: 150%;
 	background: #d3d3d3;
@@ -17,23 +17,27 @@ header { background: white; }
 
 h1 {
 	margin-top: 0; /* keeps this at the top of the page */
-	margin-left: 50px;
+/*	margin-left: 50px;*/
+	/*margin-right: auto;*/
 	padding: 20px 20px;
 	width: 300px;
 	font-size: 28px;
 	color: white;
 	background-color: #4aaaa5;
-	text-align: center;
+	/*text-align: center;*/
 }
 
-h2 { font-size: 12px; margin-left: }
+h2 { font-size: 12px; }
 
 a  { color: gray; text-decoration: none; }
 
 p  {color: gray;}
 
 .container {
-	margin: 50px auto; /* give space between the header and the main content */
+	float: left;
+	margin-left: auto;
+	margin-right: auto;;
+	/*margin: 50px auto;  give space between the header and the main content */
 }
 
 nav {	
@@ -55,7 +59,7 @@ section {
 }
 
 .contact-icons {
-	margin-right: 20px; /* gives breathing space to the image/photo */
+	margin-right: 2px; /* gives breathing space to the image/photo */
 	margin-bottom: 50px;
 	width: 40px;
 	height: 40px;
@@ -63,7 +67,7 @@ section {
 
  /* -- because the linked in icon is "special" and by this I mean retarded -- */
 .contact-icons-linkedIn {
-	margin-right: 20px; /* gives breathing space to the image/photo */
+	margin-right: 2px; /* gives breathing space to the image/photo */
 	margin-bottom: 48px; /*because the icon now has to be adjusted in size, so does the space it takes up*/
 	width: 46px;
 	height: 46px;
@@ -81,18 +85,21 @@ section {
 
 
 #main-bio     { 
-		margin: 0 50px 70px 50px; /* gives space between sections in the main content */
-		width: 50%; 
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%; 
 		padding-left: 20px; 
 		text-align: justify;
 
 	}
 
 #contact-info { 
-
-	width: 17%; 
-	padding: 0 50px 0;
-	clear: right;
+	/*margin: 0 50px 70px 50px;  gives space between sections in the main content */
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%; 
+	padding-left: 20px; 
+	text-align: center;
 }
 
 #bio-image {
@@ -148,5 +155,29 @@ footer {
 	font-size: 20px
 }
 
-.imageSizes {
+/*@media { max-widths: 980px;}*/
+@media screen and ( max-width: 768px ) {
+		nav {display: none;}
+	h1 {
+		width: 100%; 
+		margin: 0px;
+		text-align: center;
+	}
+	.container { 
+		/*width: 1300px; */
+		margin-right: auto; 
+		margin-left: auto;
+	}
+	
+	#contact-info {
+	width: 40%; 
+	}
+}
+@media screen and (max-width: 640px) {
+	.container { 
+		/*min-width: 300px; */
+		margin-right: auto; 
+		margin-left: auto;
+	}
+
 }
